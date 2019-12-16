@@ -1,7 +1,8 @@
 #include <iostream>
-int main()
-{
-	std::cout << "Helli world!";
 
-	return 0;
-}
+using namespace std;
+
+int main(){
+    for (int i=0; i<arrSize; ++i){
+        cout<<&arr[i]<<endl;
+  }
