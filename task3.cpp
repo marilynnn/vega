@@ -12,10 +12,10 @@ typedef struct {
 }Participant;
 
 typedef struct {
+    double result;
     int age;
     bool WinnerOrNot;
     char region [30];
-    double result;
     char name [21];
 
 }Participant_2;
@@ -51,10 +51,10 @@ int main()
     size_t AlexeySize = sizeof(Alexey.name)+sizeof(Alexey.age)+sizeof(Alexey.region)+sizeof(Alexey.result)+sizeof(Alexey.WinnerOrNot);
 
     cout<<"Адреса объектов структуры: "<<endl;
-    cout << &Alexey.age<< endl
+    cout << &Alexey.result<< endl
     << &Alexey.WinnerOrNot<< endl
     << &Alexey.region<< endl
-    << &Alexey.result<< endl
+    << &Alexey.age<< endl
     << &Alexey.name<< endl;
     cout<<"Сумма размеров объектов структуры: "<< AlexeySize<<endl;
     cout<<"Размер структуры: "<<sizeof(Alexey)<<endl;
